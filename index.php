@@ -42,14 +42,12 @@ $tasks = [
     ]
     ];
 
-    /* Я в тупике, функция всегда выдает 0, сравнение не выполняется */
-function showing_count_of_tasks($tasks, $projects) {
+
+function showing_count_of_tasks($tasks, $project) {
     $count = 0;
     foreach ($tasks as $task) {
-        if ($task['category'] == $projects) {
+        if ($task['category'] == $project) {
             $count++;
-        } elseif ($task['category'] !== $projects) {
-            $count = 0;
         }
     }
     return $count;
@@ -98,7 +96,7 @@ function showing_count_of_tasks($tasks, $projects) {
                     <?php foreach ($projects as $project): ?>
                         <li class="main-navigation__list-item">
                             <a class="main-navigation__list-item-link" href="#"><?= $project ?></a>
-                            <span class="main-navigation__list-item-count"><?= showing_count_of_tasks($tasks, $projects); ?></span>
+                            <span class="main-navigation__list-item-count"><?= showing_count_of_tasks($tasks, $project); ?></span>
                         </li>
                         <?php endforeach; ?>
                     </ul>
