@@ -1,7 +1,7 @@
 # Личный проект «Дела в Порядке»
 
 * Студент: [Андрей Ермолин](https://up.htmlacademy.ru/php/12/user/1876183).
-* Наставник: [Анатолий Бибанаев](https://htmlacademy.ru/profile/id1928985).
+* Наставник: [Сергей Парфенов](https://htmlacademy.ru/profile/id926645).
 
 ---
 
