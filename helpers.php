@@ -124,7 +124,7 @@ function get_noun_plural_form (int $number, string $one, string $two, string $ma
  * Подключает шаблон, передает туда данные и возвращает итоговый HTML контент
  * @param string $name Путь к файлу шаблона относительно папки templates
  * @param array $data Ассоциативный массив с данными для шаблона
- * @return string Итоговый html
+ * @return string Итоговый HTML
  */
 function include_template($name, array $data = []) {
     $name = 'templates/' . $name;
@@ -144,15 +144,23 @@ function include_template($name, array $data = []) {
 }
 
 
+/**
+* Функция должна принимать два аргумента:
+* список задач в виде массива;
+* название проекта;
+* Функция должна возвращать результат: число задач для переданного проекта.
+* @param array $tasks Ассоциативный массив со списком задач
+* @param string $project массив с названием проекта
+* @param string $count число задач для переданного проекта
+ */
 
-function showing_count_of_tasks(array $tasks, string $project): int {
+function showing_count_of_tasks(array $tasks, string $project): int
+{
     $count = 0;
     foreach ($tasks as $task) {
-        if ($task['category'] == $project) {
+        if ($task['category'] === $project) {
             $count++;
         }
     }
     return $count;
 }
-
-?>

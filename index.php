@@ -39,8 +39,7 @@ $tasks = [
         'date' => null,
         'category' => 'Домашние дела',
         'completed' => false
-    ]
-    ];
+    ]];
 
 require_once 'helpers.php';
 

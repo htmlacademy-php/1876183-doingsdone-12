@@ -40,7 +40,7 @@
 
                 <table class="tasks">
                 <?php foreach  ($tasks as $task):
-                    if ($task['completed'] == true and ($show_complete_tasks == 0)) {
+                    if ($task['completed'] === true and ($show_complete_tasks === 0)) {
                         continue;
                     }
                     ?>
@@ -60,7 +60,7 @@
                     </tr>
                     <?php endforeach ?>
                     <!--показывать следующий тег <tr/>, если переменная $show_complete_tasks равна единице-->
-                    <?php if ($show_complete_tasks == 1): ?>
+                    <?php if ($show_complete_tasks === 1): ?>
                         <tr class="tasks__item task task--completed">
                             <td class="task__select">
                                 <label class="checkbox task__checkbox">
