@@ -158,7 +158,7 @@ function showing_count_of_tasks(array $tasks, string $project): int
 {
     $count = 0;
     foreach ($tasks as $task) {
-        if ($task['category'] === $project) {
+        if ($task['project'] === $project) {
             $count++;
         }
     }

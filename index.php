@@ -7,37 +7,37 @@ $tasks = [
     [
         'tasks' => 'Собеседование в IT компании',
         'date' => '01.12.2019',
-        'category' => 'Работа',
+        'project' => 'Работа',
         'completed' => false
     ],
     [
         'tasks' => 'Выполнить тестовое задание',
         'date' => '25.12.2019',
-        'category' => 'Работа',
+        'project' => 'Работа',
         'completed' => false
     ],
     [
         'tasks' => 'Сделать задание первого раздела',
         'date' => '21.12.2019',
-        'category' => 'Учеба',
+        'project' => 'Учеба',
         'completed' => true
     ],
     [
         'tasks' => 'Встреча с другом',
         'date' => '22.12.2019',
-        'category' => 'Входящие',
+        'project' => 'Входящие',
         'completed' => false
     ],
     [
         'tasks' => 'Купить корм для кота',
         'date' => null,
-        'category' => 'Домашние дела',
+        'project' => 'Домашние дела',
         'completed' => false
     ],
     [
         'tasks' => 'Заказать пиццу',
         'date' => null,
-        'category' => 'Домашние дела',
+        'project' => 'Домашние дела',
         'completed' => false
     ]];
 
